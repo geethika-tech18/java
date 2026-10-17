@@ -1,0 +1,13 @@
+public class Main {
+    // Declaring an attribute x
+    int x = 5;
+
+    public static void main(String[] args) {
+        // Creating an object called myObj
+        Main myObj = new Main();
+
+        // Printing the value of x from the object
+        System.out.println("--- Object Example ---");
+        System.out.println("Value of x: " + myObj.x);
+    }
+}
