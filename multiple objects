@@ -1,0 +1,20 @@
+public class Main {
+    // Declaring an attribute x
+    int x = 10;
+
+    public static void main(String[] args) {
+        // Creating the first object
+        Main myObj1 = new Main();
+        
+        // Creating the second object
+        Main myObj2 = new Main();
+
+        // Changing the value of x only for the second object
+        myObj2.x = 25;
+
+        // Displaying the values from both objects
+        System.out.println("--- Multiple Objects Example ---");
+        System.out.println("Value of x in myObj1: " + myObj1.x);
+        System.out.println("Value of x in myObj2: " + myObj2.x);
+    }
+}
