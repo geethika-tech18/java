@@ -1,0 +1,21 @@
+public class LargestNumberDemo {
+    public static void main(String[] args) {
+        // Declaring two numbers
+        int num1 = 45;
+        int num2 = 30;
+
+        // Displaying the numbers
+        System.out.println("--- Find Largest of Two Numbers ---");
+        System.out.println("First Number  : " + num1);
+        System.out.println("Second Number : " + num2);
+
+        // Comparing the numbers using if-else statements
+        if (num1 > num2) {
+            System.out.println("Largest Number: " + num1);
+        } else if (num2 > num1) {
+            System.out.println("Largest Number: " + num2);
+        } else {
+            System.out.println("Both numbers are equal.");
+        }
+    }
+}
