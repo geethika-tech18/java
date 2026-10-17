@@ -1,0 +1,18 @@
+public class SimpleInterestDemo {
+    public static void main(String[] args) {
+        // Declaring principal amount, rate of interest, and time (in years)
+        double principal = 10000.0;
+        double rate = 5.5;
+        double time = 3.0;
+
+        // Calculating Simple Interest using the formula: (P * R * T) / 100
+        double simpleInterest = (principal * rate * time) / 100;
+
+        // Displaying the result
+        System.out.println("--- Simple Interest Calculator ---");
+        System.out.println("Principal Amount : $" + principal);
+        System.out.println("Rate of Interest : " + rate + "%");
+        System.out.println("Time (Years)     : " + time);
+        System.out.println("Simple Interest  : $" + simpleInterest);
+    }
+}
