@@ -1,0 +1,17 @@
+public class FactorialDemo {
+    public static void main(String[] args) {
+        // Declaring the number to find the factorial for
+        int number = 5;
+        long factorial = 1;
+
+        // Calculating factorial using a for loop
+        for (int i = 1; i <= number; i++) {
+            factorial *= i; // Same as factorial = factorial * i;
+        }
+
+        // Displaying the result
+        System.out.println("--- Factorial Calculator ---");
+        System.out.println("Number    : " + number);
+        System.out.println("Factorial : " + factorial);
+    }
+}
