@@ -1,0 +1,16 @@
+public class AdditionDemo {
+    public static void main(String[] args) {
+        // Declaring and initializing two numbers
+        int num1 = 15;
+        int num2 = 25;
+
+        // Calculating the sum
+        int sum = num1 + num2;
+
+        // Displaying the result
+        System.out.println("--- Addition of Two Numbers ---");
+        System.out.println("First Number : " + num1);
+        System.out.println("Second Number: " + num2);
+        System.out.println("Sum          : " + sum);
+    }
+}
