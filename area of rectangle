@@ -1,0 +1,16 @@
+public class RectangleAreaDemo {
+    public static void main(String[] args) {
+        // Declaring length and width of the rectangle
+        double length = 12.5;
+        double width = 5.0;
+
+        // Calculating the area (Area = length * width)
+        double area = length * width;
+
+        // Displaying the result
+        System.out.println("--- Area of Rectangle ---");
+        System.out.println("Length : " + length);
+        System.out.println("Width  : " + width);
+        System.out.println("Area   : " + area);
+    }
+}
