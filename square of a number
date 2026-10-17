@@ -1,0 +1,14 @@
+public class SquareDemo {
+    public static void main(String[] args) {
+        // Declaring the number
+        double number = 7.0;
+
+        // Calculating the square (number multiplied by itself)
+        double square = number * number;
+
+        // Displaying the result
+        System.out.println("--- Square of a Number ---");
+        System.out.println("Number : " + number);
+        System.out.println("Square : " + square);
+    }
+}
