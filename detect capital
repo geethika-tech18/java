@@ -1,0 +1,27 @@
+class Solution {
+    public boolean detectCapitalUse(String word) {
+        int n = word.length();
+        
+        // Case 1 & 2: If the first letter is lowercase, all remaining letters must be lowercase
+        if (Character.isLowerCase(word.charAt(0))) {
+            for (int i = 1; i < n; i++) {
+                if (Character.isUpperCase(word.charAt(i))) {
+                    return false;
+                }
+            }
+        } 
+        // Case 3: If the first letter is uppercase, either ALL remaining are uppercase OR ALL remaining are lowercase
+        else {
+            if (n > 1) {
+                boolean isSecondUpper = Character.isUpperCase(word.charAt(1));
+                for (int i = 2; i < n; i++) {
+                    if (Character.isUpperCase(word.charAt(i)) != isSecondUpper) {
+                        return false;
+                    }
+                }
+            }
+        }
+        
+        return true;
+    }
+}
