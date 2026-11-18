@@ -1,0 +1,28 @@
+class Solution {
+    public String reversePrefix(String word, char ch) {
+        // Find the index of the first occurrence of ch
+        int idx = word.indexOf(ch);
+        
+        // If ch does not exist in word, return the original string
+        if (idx == -1) {
+            return word;
+        }
+        
+        // Convert string to a character array to easily reverse the prefix in-place
+        char[] chars = word.toCharArray();
+        int left = 0;
+        int right = idx;
+        
+        // Reverse the segment from 0 to idx
+        while (left < right) {
+            char temp = chars[left];
+            chars[left] = chars[right];
+            chars[right] = temp;
+            left++;
+            right--;
+        }
+        
+        // Return the newly formed string
+        return new String(chars);
+    }
+}
