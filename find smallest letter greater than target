@@ -1,0 +1,21 @@
+class Solution {
+    public char nextGreatestLetter(char[] letters, char target) {
+        int left = 0;
+        int right = letters.length - 1;
+
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+
+            if (letters[mid] > target) {
+                // letters[mid] is a candidate; search left for an even smaller valid letter
+                right = mid - 1;
+            } else {
+                // letters[mid] <= target; need a strictly greater letter on the right
+                left = mid + 1;
+            }
+        }
+
+        // If left == letters.length, no letter > target exists, so left % letters.length gives 0
+        return letters[left % letters.length];
+    }
+}
